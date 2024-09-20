@@ -73,6 +73,7 @@
 - `description` (text) — описание задачи.
 - `assigned_to` (UUID, references `users`) — пользователь, назначенный на задачу.
 - `status` (string: "open", "in progress", "completed", "on hold") — статус задачи.
+- `priority` (string: "minor", "major", "critical", "blocker") — приоритет задачи.
 - `due_date` (timestamp) — срок выполнения задачи.
 - `time_spent` (integer) — затраченное время в минутах.
 - `comments` (JSONB) — комментарии (автор, текст, timestamp).
