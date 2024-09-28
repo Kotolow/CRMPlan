@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS projects (
     id serial PRIMARY KEY,
     name varchar(100) NOT NULL,
+    code varchar(100) NOT NULL,
     description varchar(500),
     created_by integer NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
@@ -27,6 +28,7 @@ CREATE TABLE IF NOT EXISTS projects (
 -- Creation of tasks table
 CREATE TABLE IF NOT EXISTS tasks (
     id serial PRIMARY KEY,
+    task_id varchar(100) NOT NULL,
     project_id integer NOT NULL,
     title varchar(100) NOT NULL,
     description varchar(500),

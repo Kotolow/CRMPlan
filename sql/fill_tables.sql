@@ -7,23 +7,23 @@ VALUES
     ('Anna Davis', 'anna@example.com', 'hashed_password_4', 'https://example.com/avatar4.png');
 
 -- Insert project
-INSERT INTO projects (name, description, created_by)
+INSERT INTO projects (name, code, description, created_by)
 VALUES
-    ('Hackathon Project', 'High-performance project management app', 1);
+    ('Hackathon Project', 'H&h', 'High-performance project management app', 1);
 
 -- Insert tasks
-INSERT INTO tasks (project_id, title, description, assigned_to, status, priority, due_date, time_spent, comments)
+INSERT INTO tasks (task_id,project_id, title, description, assigned_to, status, priority, due_date, time_spent, comments)
 VALUES
-    (1, 'Set up project structure', 'Initialize project structure and tools', 1, 'completed', 'critical', '2024-09-25 10:00:00', 240, '[{"author": "John Doe", "text": "Initial setup done", "timestamp": "2024-09-19T09:00:00Z"}]'),
-    (1, 'Database schema design', 'Design and create database schema', 2, 'in progress', 'major', '2024-09-26 15:00:00', 180, '[{"author": "Jane Smith", "text": "Working on schema", "timestamp": "2024-09-19T12:00:00Z"}]'),
-    (1, 'Frontend layout', 'Create the basic frontend layout', 3, 'open', 'major', '2024-09-27 12:00:00', 0, '[]'),
-    (1, 'API for users', 'Create the API for user registration and authentication', 1, 'in progress', 'blocker', '2024-09-28 18:00:00', 120, '[{"author": "John Doe", "text": "Started working on it", "timestamp": "2024-09-20T10:00:00Z"}]'),
-    (1, 'Google Calendar integration', 'Add Google Calendar integration for scheduling', 2, 'open', 'critical', '2024-09-29 09:00:00', 0, '[]'),
-    (1, 'AI assistant module', 'Implement AI assistant for task management', 4, 'open', 'minor', '2024-09-30 16:00:00', 0, '[]'),
-    (1, 'User achievements', 'Create system for user achievements', 3, 'open', 'major', '2024-10-01 14:00:00', 0, '[]'),
-    (1, 'Notifications service', 'Develop service for notifications and reminders', 4, 'on hold', 'minor', '2024-10-02 11:00:00', 60, '[{"author": "Anna Davis", "text": "Paused until API is ready", "timestamp": "2024-09-21T15:00:00Z"}]'),
-    (1, 'Task time tracking', 'Add time tracking for tasks', 2, 'in progress', 'major', '2024-10-03 13:00:00', 90, '[{"author": "Jane Smith", "text": "Almost done", "timestamp": "2024-09-22T09:00:00Z"}]'),
-    (1, 'Finalize project documentation', 'Complete project documentation', 1, 'open', 'blocker', '2024-10-04 17:00:00', 0, '[]');
+    ('H&h-1',1, 'Set up project structure', 'Initialize project structure and tools', 1, 'completed', 'critical', '2024-09-25 10:00:00', 240, '[{"author": "John Doe", "text": "Initial setup done", "timestamp": "2024-09-19T09:00:00Z"}]'),
+    ('H&h-2',1, 'Database schema design', 'Design and create database schema', 2, 'in progress', 'major', '2024-09-26 15:00:00', 180, '[{"author": "Jane Smith", "text": "Working on schema", "timestamp": "2024-09-19T12:00:00Z"}]'),
+    ('H&h-3',1, 'Frontend layout', 'Create the basic frontend layout', 3, 'open', 'major', '2024-09-27 12:00:00', 0, '[]'),
+    ('H&h-4',1, 'API for users', 'Create the API for user registration and authentication', 1, 'in progress', 'blocker', '2024-09-28 18:00:00', 120, '[{"author": "John Doe", "text": "Started working on it", "timestamp": "2024-09-20T10:00:00Z"}]'),
+    ('H&h-5',1, 'Google Calendar integration', 'Add Google Calendar integration for scheduling', 2, 'open', 'critical', '2024-09-29 09:00:00', 0, '[]'),
+    ('H&h-6',1, 'AI assistant module', 'Implement AI assistant for task management', 4, 'open', 'minor', '2024-09-30 16:00:00', 0, '[]'),
+    ('H&h-7',1, 'User achievements', 'Create system for user achievements', 3, 'open', 'major', '2024-10-01 14:00:00', 0, '[]'),
+    ('H&h-8',1, 'Notifications service', 'Develop service for notifications and reminders', 4, 'on hold', 'minor', '2024-10-02 11:00:00', 60, '[{"author": "Anna Davis", "text": "Paused until API is ready", "timestamp": "2024-09-21T15:00:00Z"}]'),
+    ('H&h-9',1, 'Task time tracking', 'Add time tracking for tasks', 2, 'in progress', 'major', '2024-10-03 13:00:00', 90, '[{"author": "Jane Smith", "text": "Almost done", "timestamp": "2024-09-22T09:00:00Z"}]'),
+    ('H&h-10',1, 'Finalize project documentation', 'Complete project documentation', 1, 'open', 'blocker', '2024-10-04 17:00:00', 0, '[]');
 
 -- Insert achievements
 INSERT INTO achievements (user_id, achievement_type, image_url)
